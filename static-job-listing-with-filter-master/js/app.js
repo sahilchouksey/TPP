@@ -34,6 +34,7 @@ elements.clearBtn.addEventListener('click', e=> {
   elements.filtertext.innerHTML=''
   disText()
   if (clickedButtons.length === 0) elements.filtertext.innerHTML ='No filters applied...'
+  elements.clearBtn.style.margin = '10px'
 })
 
 

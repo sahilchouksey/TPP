@@ -13,7 +13,7 @@ let clickedButtons = []
 
 function disText() {
   let x = []
-  elements.clearBtn.style.margin = '3px'
+  elements.clearBtn.style.margin = '10px'
   if (clickedButtons.length>0) {
      let markUp;
      elements.clearBtn.style.margin = '28px'

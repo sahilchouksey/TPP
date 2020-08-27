@@ -129,7 +129,7 @@ footer{
 
 span.error.active{
     color: red;
-
+    margin: 5px:
     position: absolute;
     bottom: -25px;
     left: 25px;

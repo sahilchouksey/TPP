@@ -27,7 +27,7 @@ function disText() {
 }
 
 elements.clearBtn.addEventListener('click', e=> {
-  elements.clearBtn.style.margin = '10px';
+  elements.clearBtn.style.margin = '10px'
   buttons.forEach(g => {           
     g.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.classList.remove("hide");
   })

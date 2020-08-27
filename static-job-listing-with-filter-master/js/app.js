@@ -34,7 +34,7 @@ elements.clearBtn.addEventListener('click', e=> {
   clickedButtons = []
   elements.filtertext.innerHTML=''
   disText()
-
+  if (clickedButtons.length === 0) elements.filtertext.innerHTML ='No filters applied...'
 })
 
 
@@ -54,6 +54,8 @@ buttons.forEach((g, i) => {
    
   g.addEventListener( 'click', e => {
 
+    if (elements.filtertext.innerText === 'No filters applied...') elements.filtertext.innerHTML =''
+    else if (clickedButtons.length === 0) elements.filtertext.innerHTML ='No filters applied...'
     let indexOfRepeatedBtn = findAllIndexOf(clickedButtons, g.innerText.toLowerCase())
     if (indexOfRepeatedBtn.length < 1 ) clickedButtons.push(g.innerText.toLowerCase());
 

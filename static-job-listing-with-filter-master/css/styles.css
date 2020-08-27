@@ -238,5 +238,13 @@ li{
 @media only screen and (min-width: 375px){
 	#mobile-header{
 		display:none;
-}
+    }
+    div.clear{
+	   width: 76px;
+	   align-self: center;
+	   position: relative;
+	}
+	div.filter-tab-content{
+		align-self: center;
+	}
 }
